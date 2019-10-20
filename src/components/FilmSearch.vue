@@ -1,5 +1,7 @@
 <template lang="html">
-  <input type="text" v-model="searchInput" v-on:keyup="handleSearchInput">
+  <div>
+    Search: <input type="text" v-model="searchInput" v-on:keyup="handleSearchInput">
+  </div>
 </template>
 
 <script>
@@ -24,4 +26,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
+input {
+  font-size: 20px;
+  font-family: Ghibli;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+}
 </style>
