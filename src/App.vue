@@ -13,6 +13,7 @@
 import FilmList from '@/components/FilmList.vue';
 import FilmDetails from '@/components/FilmDetails.vue';
 import FavFilmList from '@/components/FavFilmList.vue';
+import FavFilmItem from '@/components/FavFilmItem.vue';
 import {eventBus} from '@/main.js'
 
 export default {
@@ -35,6 +36,10 @@ export default {
     eventBus.$on('add-to-favs', (film) => {
       if (!this.favouriteFilms.includes(film))
       {this.favouriteFilms.push(film)};
+    });
+    eventBus.$on('remove-from-favs', (filmToRemove) => {
+      this.favouriteFilms = this.favouriteFilms
+      .filter(film => film.title !== filmToRemove.title);
     });
   },
   components: {

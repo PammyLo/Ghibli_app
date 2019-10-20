@@ -7,6 +7,7 @@
       <p>{{ film.producer }}</p>
       <p>{{ film.release_date }}</p>
     <button v-on:click="handleClick">Add to my favourite films</button>
+    <button v-on:click="handleRemoveClick">Remove from my favourite films</button>
   </div>
 </template>
 
@@ -19,6 +20,9 @@ export default {
   methods: {
     handleClick(){
       eventBus.$emit('add-to-favs', this.film);
+    },
+    handleRemoveClick(){
+      eventBus.$emit('remove-from-favs', this.film);
     }
   }
 }
