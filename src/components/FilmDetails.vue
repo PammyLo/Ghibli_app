@@ -18,7 +18,7 @@ export default {
   props:['film'],
   methods: {
     handleClick(){
-      eventBus.$emit('fav-selected', this.film);
+      eventBus.$emit('add-to-favs', this.film);
     }
   }
 }

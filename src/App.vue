@@ -32,8 +32,9 @@ export default {
     eventBus.$on('film-selected', (film) => {
       this.selectedFilm = film;
     });
-    eventBus.$on('fav-selected', (film) => {
-      this.favouriteFilms.push(film);
+    eventBus.$on('add-to-favs', (film) => {
+      if (!this.favouriteFilms.includes(film))
+      {this.favouriteFilms.push(film)};
     });
   },
   components: {
