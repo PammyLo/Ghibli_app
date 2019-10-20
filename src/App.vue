@@ -8,7 +8,6 @@
 <script>
 import FilmList from '@/components/FilmList.vue';
 
-
 export default {
   name: "app",
   data() {
