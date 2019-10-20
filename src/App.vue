@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <h1>Ghibli World</h1>
-    <film-list></film-list>
+    <film-list :films="films"></film-list>
   </div>
 </template>
 
