@@ -22,7 +22,7 @@ export default {
 
 <style lang="css" scoped>
 div {
-  flex-basis: 40%;
+  flex-basis: 30%;
   padding-left: 40px;
 }
 </style>

@@ -6,8 +6,8 @@
       <p>Producer: {{ film.producer }}</p>
       <p>Release date: {{ film.release_date }}</p>
       <article>{{ film.description }}</article>
-    <button v-on:click="handleClick">Add to my favourite Ghibli!</button>
-    <button v-on:click="handleRemoveClick">Remove from my favourite Ghibli</button>
+    <button v-on:click="handleClick">Add to my favourite Ghiblis!</button>
+    <button v-on:click="handleRemoveClick">Remove from my favourite Ghiblis</button>
   </div>
 </template>
 
@@ -30,9 +30,7 @@ export default {
 
 <style lang="css" scoped>
 div {
-  flex-basis: 35%;
-  /* margin-right: 600px; */
-  /* background-color: white; */
+  flex-basis: 30%;
 }
 
 h2 {

@@ -24,6 +24,6 @@ export default {
 
 <style lang="css" scoped>
 div {
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 </style>
