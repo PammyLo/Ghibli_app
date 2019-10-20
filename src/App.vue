@@ -1,9 +1,11 @@
 <template lang="html">
   <div>
     <h1>Ghibli World</h1>
-    <film-list :films="films"></film-list>
-    <film-details v-if="selectedFilm" :film="selectedFilm"></film-details>
-    <fav-film-list v-if='favouriteFilms.length' :favourites='favouriteFilms'>></fav-film-list>
+      <div class="main-container">
+        <film-list :films="films"></film-list>
+        <film-details v-if="selectedFilm" :film="selectedFilm"></film-details>
+        <fav-film-list v-if='favouriteFilms.length' :favourites='favouriteFilms'>></fav-film-list>
+      </div>
   </div>
 </template>
 
@@ -43,4 +45,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.main-container {
+    display: flex;
+    justify-content: space-between;
+  }
 </style>

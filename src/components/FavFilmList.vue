@@ -1,5 +1,6 @@
 <template lang="html">
-<div class="main-container">
+<div>
+  <h2>My Favourite Ghibli Films</h2>
   <ul>
     <li v-for="(film, index) in favourites" :key="index"> {{ film.title }}
     </li>
@@ -15,8 +16,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.main-container {
-    display: flex;
-    justify-content: space-between;
-  }
+div {
+  flex-basis: 30%;
+}
 </style>

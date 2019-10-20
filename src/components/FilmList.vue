@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+    <h2>All Ghibli Studio Films</h2>
     <ul>
       <film-list-item v-for="(film, index) in films" :key="index" :film="film"> {{ film.title }}
       </film-list-item>
@@ -21,4 +22,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+div {
+  flex-basis: 30%;
+}
 </style>
