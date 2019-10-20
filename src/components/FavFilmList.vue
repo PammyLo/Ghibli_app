@@ -1,6 +1,6 @@
 <template lang="html">
 <div>
-  <h2>My Favourite Ghibli Films</h2>
+  <h2>My Favourites</h2>
   <ul>
     <fav-list-item v-for="(favourite, index) in favourites" :key="index" :film="favourite">
     </fav-list-item>
@@ -22,6 +22,7 @@ export default {
 
 <style lang="css" scoped>
 div {
-  flex-basis: 30%;
+  flex-basis: 40%;
+  padding-left: 40px;
 }
 </style>

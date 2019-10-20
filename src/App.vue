@@ -1,9 +1,11 @@
 <template lang="html">
   <div>
-    <h1>Ghibli World</h1>
+    <h1>Studio Ghibli</h1>
       <div class="main-container">
         <film-list :films="films"></film-list>
         <film-details v-if="selectedFilm" :film="selectedFilm"></film-details>
+      <!-- </div>
+      <div class="fav-list"> -->
         <fav-film-list v-if='favouriteFilms.length' :favourites='favouriteFilms'>></fav-film-list>
       </div>
   </div>
@@ -49,9 +51,33 @@ export default {
 }
 </script>
 
+<style lang="css">
+body {
+background-image: url(./assets/Ghibli_castle_in_sky_rotated.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-image: x-transform (-1);
+padding-left: 50px;
+padding-top: 50px;
+font-family: Ghibli;
+font-size: 22px;
+}
+</style>
+
 <style lang="css" scoped>
+h1 {
+  color: #436AA3;
+  font-family: Ghibli Bold;
+  font-size: 56px;
+  text-align: center;
+}
 .main-container {
+  /* width: 60%; */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
+/* .fav-list {
+  width: 40%;
+  display: flex;
+} */
 </style>
