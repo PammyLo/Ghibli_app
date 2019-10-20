@@ -2,16 +2,21 @@
 <div>
   <h2>My Favourite Ghibli Films</h2>
   <ul>
-    <li v-for="(film, index) in favourites" :key="index"> {{ film.title }}
-    </li>
+    <fav-list-item v-for="(favourite, index) in favourites" :key="index" :film="favourite">
+    </fav-list-item>
   </ul>
 </div>
 </template>
 
 <script>
+import FavListItem from '@/components/FavListItem.vue';
+
 export default {
   name: "fav-film-list",
-  props: ['favourites']
+  props: ['favourites'],
+  components: {
+    'fav-list-item': FavListItem
+  }
 }
 </script>
 

@@ -2,7 +2,8 @@
   <div>
     <h2>All Ghibli Studio Films</h2>
     <ul>
-      <film-list-item v-for="(film, index) in films" :key="index" :film="film"> {{ film.title }}
+      <film-list-item v-for="(film, index) in films" :key="index" :film="film">
+        {{ film.title }}
       </film-list-item>
     </ul>
   </div>

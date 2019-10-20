@@ -13,7 +13,6 @@
 import FilmList from '@/components/FilmList.vue';
 import FilmDetails from '@/components/FilmDetails.vue';
 import FavFilmList from '@/components/FavFilmList.vue';
-import FavFilmItem from '@/components/FavFilmItem.vue';
 import {eventBus} from '@/main.js'
 
 export default {
@@ -45,7 +44,7 @@ export default {
   components: {
     'film-list': FilmList,
     'film-details': FilmDetails,
-    'fav-film-list': FavFilmList
+    'fav-film-list': FavFilmList,
   }
 }
 </script>
